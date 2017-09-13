@@ -1,0 +1,85 @@
+package aug21.add;
+
+
+class Card{
+	static final int KIND_MAX = 4;
+	static final int NUM_MAX = 13;
+	
+	static final int SPADE		= 4;
+	static final int DIAMOND	= 3;
+	static final int HEART		= 2;
+	static final int CLOVER 	= 1;
+	
+	int kind;
+	int number;
+	
+	Card(){ this(SPADE, 1);}
+	Card(int kind, int number){
+		this.kind = kind;
+		this.number = number;
+	}
+	
+	public String toString() {
+		String kind = "";
+		String number = "";
+		
+		switch(this.kind) {
+			case 4 :	kind = "SPADE";		break;
+			case 3 :	kind = "DIAMOND";	break;
+			case 2 :	kind = "HEART";		break;
+			case 1 :	kind = "CLOVER";	break;
+			default:
+		}
+		switch(this.number) {
+			case 1 :	number = "A";	break;
+			case 11:	number = "J";	break;
+			case 12:	number = "Q";	break;
+			case 13:	number = "K";	break;
+			default:	number = ""+this.number;
+		}
+		return "kind : "+kind+", number : "+number;
+	}
+} // end class Card
+
+class Deck{
+	final int CARD_NUM = 52;
+	Card c[] = new Card[CARD_NUM];
+	
+	Deck() {
+		int i = 0;
+		
+		for(int k=Card.KIND_MAX; k>0; k--) {
+			for(int n=1; n<Card.NUM_MAX+1; n++) {
+				c[i++] = new Card(k, n);
+			} // end for n
+		} // end for k
+	} // end Deck()
+	
+	Card pick(int index) {
+		if(index>=0 && index<CARD_NUM)	return c[index];
+		else							return pick();
+	}
+	Card pick() {
+		return pick((int)(Math.random()*CARD_NUM));
+	}
+	void shuffle() {
+		Card temp;
+		for(int i=0; i<1000; i++) {
+			int rindex = (int)(Math.random()*CARD_NUM);
+			temp = c[rindex];
+			c[rindex] = c[0];
+			c[0] = temp;
+		}
+	}
+}
+
+class DeckTest {
+	public static void main(String[] args) {
+		Deck d = new Deck();
+		Card c = d.pick(0);
+		System.out.println(c);
+		d.shuffle();
+		c = d.pick(0);
+		System.out.println(c);
+	}
+}

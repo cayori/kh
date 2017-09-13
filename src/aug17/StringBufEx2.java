@@ -1,0 +1,20 @@
+package aug17;
+
+public class StringBufEx2 {
+	
+	public static void main(String[] args) { 
+		StringBuffer sb1 = new StringBuffer("Sun-Ae");
+		StringBuffer sb2 = sb1.append(" & Kyung-Ju");
+		
+		String msg = null;
+		
+		if(sb1 == sb2)	msg = "sb1 과 sb2 는 같다";
+		else			msg = "sb1 과 sb2 는 다르다";
+		System.out.println(msg);
+		
+		msg = sb1.toString();
+		System.out.println(msg);
+		msg = sb2.toString();
+		System.out.println(msg);
+	}
+}
