@@ -1,6 +1,7 @@
 package aug18.add;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import javax.swing.*;
 
 public class ArrayEx16 {
@@ -37,6 +38,10 @@ public class ArrayEx16 {
 		if(count>1) System.out.println("시도 횟수는 "+count+" 회 입니다.");
 		System.out.println("프로그램이 종료됩니다.");
 	}
+=======
+public class ArrayEx16 {
+
+>>>>>>> first commit from KH
 =======
 public class ArrayEx16 {
 

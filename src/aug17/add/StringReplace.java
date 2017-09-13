@@ -2,6 +2,7 @@ package aug17.add;
 
 public class StringReplace {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	private String source = "";
 	private StringBuffer buffer;
@@ -40,6 +41,9 @@ public class StringReplace {
 		StringReplace sc = new StringReplace(str);
 		System.out.println(sc.replace("111", "AAA", 0));
 	}
+=======
+
+>>>>>>> first commit from KH
 =======
 
 >>>>>>> first commit from KH

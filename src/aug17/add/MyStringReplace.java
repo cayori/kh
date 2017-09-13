@@ -1,6 +1,7 @@
 package aug17.add;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class MyStringReplace{
 	
 	String str;
@@ -34,6 +35,8 @@ public class MyStringReplace{
 		StringReplace sc = new StringReplace(str);
 		System.out.println(sc.replace("111", "AAA", 0));
 =======
+=======
+>>>>>>> first commit from KH
 public class MyStringReplace {
 	  
 	  // 오리지날 스트링을 받고
@@ -85,6 +88,9 @@ public class MyStringReplace {
 	    System.out.println(str);
 	    MyStringReplace sc = new MyStringReplace(str);
 	    System.out.println(sc.replace("111", "AAA"));
+<<<<<<< HEAD
+>>>>>>> first commit from KH
+=======
 >>>>>>> first commit from KH
 	}
 }

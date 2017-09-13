@@ -1,9 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> first commit from KH
 ﻿셀-자바NCS/
 *.pdf
 
 
+<<<<<<< HEAD
+>>>>>>> first commit from KH
+=======
 >>>>>>> first commit from KH
 
 # Created by https://www.gitignore.io/api/java,eclipse
@@ -91,5 +97,9 @@ local.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+<<<<<<< HEAD
 # End of https://www.gitignore.io/api/java,eclipse
 셀-자바NCS/
+=======
+# End of https://www.gitignore.io/api/java,eclipse
+>>>>>>> first commit from KH
